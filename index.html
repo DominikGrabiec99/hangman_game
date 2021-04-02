@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman</title>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapp">
+        <nav class="wrapp__menu menu">
+            <ul class="wrapp__ul">
+                <li class="start">Start</li>
+                <li class="help">Podpowiedź</li>
+                <li class="reset">Restart</li>
+            </ul>
+        </nav>
+        <main class="wrapp__container container">
+            <div class="container__title">
+                <h1>Gra w wisielca</h1>
+            </div>
+            <div class="container__game game">
+                <section class="game__result">
+                    <div class="game__border">
+                        <span class="game__border__text">Twoje hasło to:</span>
+                        <span class="game__border__word word">_ _ _ _ _ _ _ _ _</span>
+                    </div>
+                    <!-- <div class = "game__instruction">
+                            Instrukcja gry:
+                             1
+                        </div> -->
+                </section>
+                <section class=" game__scoreBoard scoreBoard">
+                    <div class="scoreBoard__mistake">
+                        <b>Złe lietry: </b><span class="scoreBoard__wrong-letter wrong-letter"></span>
+                    </div>
+                    <input class="scoreBoard__inputText" type="text">
+                    <div class="scoreBoard__hangman hangman">
+                        <div class="hangman__floor"></div>
+                        <!-- <div class="hangman__board hangman__board--first">     
+                        <div class="hangman__board hangman__board--second">
+                            <div class="hangman__line">
+                                 <div class="hangman__head head">
+                                    <div class="head__face">
+                                        <div class="face__eye--left"></div>
+                                        <div class="face__eye--rights"></div>
+                                        <div class="face__smile"></div>
+                                    </div>
+                                    <div class="hangman__trunk">
+                                        <div class="hangman__hand hangman__hand--left"></div> 
+                                        <div class="hangman__hand hangman__hand--rights"></div> 
+                                        <div class="hangman__leg hangman__leg--left"></div> 
+                                        <div class="hangman__leg hangman__leg--rights"></div> 
+                                    </div> 
+                            </div> 
+                        </div> 
+                        </div>               
+                       </div> --> 
+                    </div>
+                </section>
+             </div>
+        </main>
+        <footer>
+            Wykonane przez Dominika Grabca
+        </footer>
+    </div>
+    <div class="message message--close">
+        <p></p>
+        <button class="message__btnClose">X</button>
+    </div>
+    <script src="app.js">
+    </script>
+</body>
+</html>
